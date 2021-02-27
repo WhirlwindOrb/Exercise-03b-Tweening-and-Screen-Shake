@@ -43,8 +43,6 @@ func _physics_process(_delta):
 			if HUD.screen_shake_blocks > 0:
 				camera.add_trauma(trauma*HUD.screen_shake_blocks)
 
-
-
 			
 		if body.has_method("emit_particle"):
 			body.emit_particle(global_position)
